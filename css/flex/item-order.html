@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Item Order</title>
+
+    <style>
+        .container, .container-regular {
+            display: flex;
+        }
+
+        .item {
+            margin: 2px;
+            border: 2px solid maroon;
+            padding: 2px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .container .three {
+            order: 3;
+        }
+
+        .container .four {
+            order: 2;
+        }
+
+        .container .five {
+            order: 1;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container-regular">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+    <div class="item">Item 9</div>
+    <div class="item">Item 10</div>
+    <div class="item">Item 11</div>
+</div>
+
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item three">Item 3</div>
+  <div class="item four">Item 4</div>
+  <div class="item five">Item 5</div>
+  <div class="item six">Item 6</div>
+  <div class="item seven">Item 7</div>
+  <div class="item eight">Item 8</div>
+  <div class="item nine">Item 9</div>
+  <div class="item ten">Item 10</div>
+  <div class="item">Item 11</div>
+</div>
+
+
+</body>
+</html>
