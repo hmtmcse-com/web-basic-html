@@ -54,7 +54,7 @@ ul li {
 .invoice {
     /* Box and border */
     max-width: 850px;
-    min-height: 920px;
+    min-height: 750px;
     border: 1px solid var(--boarder);
 
     background-color: var(--white);
