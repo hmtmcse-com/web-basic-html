@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wrapper-bg: rgba(0, 0, 0, 0.1);
+    --boarder: rgba(0, 0, 0, 0.2);
+    --table-header: rgba(0, 0, 0, 0.02);
+    --white: rgba(255, 255, 255, 255);
+    --blue: rgba(12, 47, 84, 100);
+    --dark: #535b61;
+}
+
+body {
+    font-family: "Times New Roman", sans-serif;
+    color: var(--dark);
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 4px 0;
+}
+
+.hr {
+    height: 1px;
+    background-color: var(--wrapper-bg);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.invoice-wrapper {
+    min-height: 100vh;
+    background-color: var(--wrapper-bg);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.invoice {
+    /* Box and border */
+    max-width: 850px;
+    min-height: 920px;
+    border: 1px solid var(--boarder);
+
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 35px;
+
+    /* Make center the item */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.invoice-header-top-left,
+.invoice-header-bottom-left,
+.invoice-address-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.invoice-header-top-left .logo {
+    height: 50px;
+}
+
+.invoice-header-top-right,
+.invoice-header-bottom-right,
+.invoice-address-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.invoice-header-top-right h1 {
+    font-weight: 600;
+    font-size: 27px;
+    color: var(--blue);
+}
+
+.invoice-header-top,
+.invoice-header-bottom,
+.invoice-address {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.invoice-address-right{
+    text-align: right;
+}
+
+.invoice-address {
+    padding: 16px 0;
+}
+
+.invoice-body {
+    border: 1px solid var(--wrapper-bg);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.invoice-body table {
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.invoice-body table td,
+.invoice-body table th {
+    padding: 12px;
+}
+
+.invoice-body .invoice-table-body tr {
+    border-top: 1px solid var(--wrapper-bg);
+}
+
+.invoice-body .invoice-table-head,
+.summary-tr {
+    background-color: var(--table-header);
+}
