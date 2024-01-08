@@ -184,4 +184,15 @@
     flex-grow: 4;
 }
 
+.prevent-shrink {
+    flex-shrink: 0;
+    width: 250px;
+}
 
+.basis-property {
+    flex-basis: 350px;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
