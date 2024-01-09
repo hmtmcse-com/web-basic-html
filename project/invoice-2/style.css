@@ -14,6 +14,11 @@ body {
     font-family: "Times New Roman", sans-serif, system-ui;
 }
 
+.hr {
+    border: 1px solid var(--boarder-color);
+    margin-top: 4px;
+}
+
 .invoice-wrapper {
     min-height: 100vh;
     background-color: var(--bg-color);
@@ -59,4 +64,35 @@ body {
 
 .invoice-header-top-name .sub-heading {
     font-size: 18px;
+}
+
+.invoice-header-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.invoice-header-bottom {
+    margin-top: 10px;
+    align-items: flex-end;
+}
+
+.invoice-header-bottom .left-barcode img,
+.invoice-header-bottom .right-barcode img {
+    width: 120px;
+}
+
+.invoice-header-bottom .middle-invoice {
+    border: 2px solid var(--boarder-color);
+    padding: 3px 25px 3px 25px;
+}
+
+.invoice-header-bottom .middle-invoice .middle-invoice-name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.invoice-header-bottom .middle-invoice .middle-invoice-copy {
+    font-size: 17px;
 }
