@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    <style>
+        .default-box-sizing-box1 {
+            width: 400px;
+            height: 150px;
+            border: 2px solid #7de301;
+        }
+
+        .default-box-sizing-box2 {
+            width: 400px;
+            height: 150px;
+            border: 1px solid red;
+            padding: 50px;
+        }
+
+        .border-box-sizing-box1 {
+            width: 400px;
+            height: 150px;
+            border: 2px solid #7de301;
+            box-sizing: border-box;
+        }
+
+        .border-box-sizing-box2 {
+            width: 400px;
+            height: 150px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<h3>box-sizing: content-box; (default)</h3>
+<div class="default-box-sizing-box1">
+    Example Box Size with <strong>content-box  (default)</strong>
+</div>
+
+<br/> <br/>
+
+<h3>box-sizing: content-box; (default)</h3>
+<div class="default-box-sizing-box2">
+    Example Box Size with <strong>content-box  (default)</strong>
+    Padding added
+</div>
+
+<br/> <br/>
+
+<h3>box-sizing: border-box; (default)</h3>
+<div class="border-box-sizing-box1">
+    Example Box Size with <strong>border-box</strong>
+</div>
+
+<br/> <br/>
+
+<h3>box-sizing: border-box; (default)</h3>
+<div class="border-box-sizing-box2">
+    Example Box Size with <strong>border-box</strong>
+    Padding added
+</div>
+
+
+</body>
+</html>
