@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Form</title>
+</head>
+<body>
+    <div class="container">
+         <h1 class="mb-5">Registration Form</h1>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country">
+                        <option selected disabled>Select Country</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="japan">Japan</option>
+                        <option value="chine">Chine</option>
+                        <option value="not-listed">Not Listed</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" id="username" class="form-control" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="work-hours" class="form-label">Work Hours</label>
+                    <input type="range" class="form-range" id="work-hours">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="laptop">
+                    <label class="form-check-label" for="laptop">
+                        Laptop
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="mobile">
+                    <label class="form-check-label" for="mobile">
+                        Mobile
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="power-bank">
+                    <label class="form-check-label" for="power-bank">
+                        Power Bank
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="ips-backup">
+                    <label class="form-check-label" for="ips-backup">
+                        IPS Backup
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="male">
+                    <label class="form-check-label" for="male">
+                        Male
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="female">
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="other">
+                    <label class="form-check-label" for="other">
+                        Other
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="na">
+                    <label class="form-check-label" for="na">
+                        Not Applicable
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="color-picker" class="form-label">Color picker</label>
+                    <input type="color" class="form-control form-control-color" id="color-picker">
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="mb-3 mt-3">
+                    <label for="text-area" class="form-label">About</label>
+                    <textarea class="form-control" id="text-area" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-12 mb-4">
+                <button type="button" class="btn btn-success">
+                    Register
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
